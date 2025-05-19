@@ -1,0 +1,215 @@
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    padding: 0;
+    margin: 0;
+    width:100vw;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+body {
+    position: relative;
+    background-image: url("the_netflix_login_background__canada__2024___by_logofeveryt_dh0w8qv-pre.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);   
+    z-index: -1;
+}
+
+header a{
+    font-size: 50px;
+    text-decoration: none;
+    color: red; position: absolute;
+    left: 100px;
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    background-color: rgba(0, 0, 0, 0.6);
+    height: 90%;
+    border-radius: 3px;
+    width: 500px;
+    margin-top: 35px;
+    color :white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-box
+{
+    height: max-content;
+    width: 60%;
+}
+
+.container-box h2 {font-size: 40px;}
+
+.mail-pass-box
+{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.mail-pass-box input {border-radius: 5px; padding: 10px; font-size: 20px; color: white; background-color: rgba(100, 100, 100, 0.1);}
+
+.sign-in-btn
+{
+    border-radius: 5px;
+    background-color: red;
+    margin-top: 8px;
+    padding: 15px 0;
+    color: white;
+    font-size: 20px;
+    width: 100%;
+}
+
+.sign-in-btn:hover
+{
+    background-color: rgb(222, 3, 3);
+}
+
+.sign-in-code-btn
+{
+    border-radius: 5px;
+    background-color: rgba(200, 200, 200, 0.3);
+    color: white;
+    padding: 15px 0;
+    width: 100%;
+    font-size: 20px;
+}
+
+.sign-in-code-btn:hover
+{
+    background-color: rgba(170, 170, 170, 0.3);
+}
+
+input:checked:hover
+{
+    background-color: green;
+}
+
+.sign-up-now {text-decoration: none; color: white;}
+
+.sign-up-now:hover {text-decoration: underline;}
+
+.frgt-pass
+{
+    padding-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+
+.frgt-pass a {color: white; font-size: 20px;}
+
+.new-to-netf {font-size: 20px;}
+
+.rem-me {display: inline;}
+
+footer
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    background-color: rgb(19, 19, 20);
+    height: 300px;
+}
+
+.footer-container {
+    width: 60%;
+    height: 60%;
+}
+
+.first-footer a
+{
+    text-decoration: none;
+}
+
+.first-footer, .second-footer, .fourth-footer{
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    font-size: 20px;
+}
+
+.third-footer {font-size: 20px;}
+
+.third-footer a {margin-right: 67px; margin-left: 8px;}
+
+.second-footer {margin-top: -30px;}
+
+footer a, footer p {color: grey;}
+
+@media (max-width: 600px)
+{
+    body::before
+    {
+        background-color: black;
+        margin: 0;
+        padding: 0;
+    }
+    body {
+           background-image: none;
+    }
+    header a {font-size: 30px; position: absolute; left: 30px; top: 10px}
+    .container{ width: 100%}
+    .first-footer, .second-footer, .fourth-footer {font-size: 15px;}
+    .third-footer {font-size: 15px; margin-left: -3px; width: 100%;}
+    .mail-pass-box input {font-size: 15px}
+    .sign-in-btn, .sign-in-code-btn {font-size: 15px;}
+    .frgt-pass a {font-size: 17px}
+    .new-to-netf {font-size: 17px;}
+    .captchatext {font-size: 13px;}
+}
+@media (min-width: 600px) and (max-width: 1024px) {
+    .container {
+        width: 40%;
+    }
+
+    .container-box {
+        width: 80%;
+    }
+
+    header a {
+        font-size: 35px;
+        left: 50px;
+    }
+
+    .sign-in-btn,
+    .sign-in-code-btn {
+        font-size: 18px;
+    }
+
+    .footer-container {
+        width: 80%;
+    }
+
+    .first-footer,
+    .second-footer,
+    .third-footer,
+    .fourth-footer {
+        font-size: 16px;
+    }
+}
